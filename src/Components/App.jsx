@@ -1,11 +1,19 @@
-import React from 'react'
+import React from 'react';
+import {  BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-const App = () => {
-	return (
-		<div>
-			hellow
-		</div>
-	)
-}
+import PagesTemplate from './PagesTemplate/PagesTemplate';
 
-export default App
+const App = ({ data }) => (
+	<Router>
+		<Switch>
+			<Route path='/*' render={({ location }) => (
+				<PagesTemplate
+					data={data}
+					location={location}
+				/>)} 
+			/>
+		</Switch>
+	</Router>
+);
+
+export default App;

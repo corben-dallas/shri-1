@@ -2,7 +2,7 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-// const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const OptimizeCssAssetsWebpackPlugin = require('optimize-css-assets-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
 //////////////////////////////////////////////////////////////////////
@@ -51,6 +51,14 @@ module.exports = {
 		new MiniCssExtractPlugin({
 			filename: `./${filename('css')}`, // TODO: reanme
 		}),
+		// new CopyWebpackPlugin({
+		// 	patterns: [
+		// 		{
+		// 			from: path.resolve(__dirname, 'src/Assets'),
+		// 			to: path.resolve(__dirname, 'build/Assets'),
+		// 		}
+		// 	]
+		// })
 	],
 	devtool: isProd ? false : 'source-map',
 	module: {
@@ -63,7 +71,8 @@ module.exports = {
 				test: /\.(sa|sc|c)ss$/,
 				use: [
 					isProd ? MiniCssExtractPlugin.loader : 'style-loader',
-					'css-loader', 
+					'css-loader',
+					'resolve-url-loader',
 					'sass-loader'
 				]
 			},
@@ -71,6 +80,19 @@ module.exports = {
 				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
 				use: ['babel-loader'],
+			},
+			{
+				test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
+				// type: 'asset/inline',
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: '[name].[ext]',
+							outputPath: 'Assets/fonts'
+						},
+					}
+				]
 			},
 		]
 	},
