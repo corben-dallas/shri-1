@@ -28,7 +28,7 @@ const getPageParams = ({ page, theme }, length) => {
 	};
 }
 
-const PagesTemplate = ({ data, location }) => {
+const PageWrapper = ({ data, location }) => {
 	const [themeConfig, setThemeConfig] = useState(null);
 	const [pageType, setPageType] = useState(null);
 
@@ -50,4 +50,4 @@ const PagesTemplate = ({ data, location }) => {
 	);
 };
 
-export default PagesTemplate;
+export default PageWrapper;

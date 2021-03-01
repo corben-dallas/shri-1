@@ -1,13 +1,13 @@
 import React from 'react';
-import {  BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-import PagesTemplate from './PagesTemplate/PagesTemplate';
+import PageWrapper from './PageWrapper/PageWrapper';
 
 const App = ({ data }) => (
 	<Router>
 		<Switch>
 			<Route path='/*' render={({ location }) => (
-				<PagesTemplate
+				<PageWrapper
 					data={data}
 					location={location}
 				/>)} 
