@@ -1,0 +1,31 @@
+.text { //regular
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	padding: 0;
+	margin: 0;
+
+	&--big { //bold
+		font-weight: bold;
+		font-size: 30px;
+		line-height: 32px;
+	}
+
+	&--small { //light
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	&--primary {
+		color: var(--theme-font-primary-color);
+	}
+
+	&--secondary {
+		color: var(--theme-font-secondary-color);
+	}
+
+	&--center {
+		text-align: center;
+	}
+}

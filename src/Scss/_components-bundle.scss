@@ -1,2 +1,16 @@
+//core
+@import './_font.scss';
 @import './Theme/_theme-var.scss';
 @import './_scaffolding.scss';
+
+//default
+@import './Default/_text.scss';
+@import './Default/_avatar.scss';
+
+//components
+@import '../Components/Leaders/_leaders.scss';
+@import '../Components/LeadersBarChart/_leaders-bar-chart.scss';
+@import '../Components/TemplateAlias/_template-alias.scss';
+
+// media
+@import '../Components/LeadersBarChart/_leaders-bar-chart-media.scss';

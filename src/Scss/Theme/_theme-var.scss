@@ -1,5 +1,5 @@
 //----dark mode----//
-$background-color-dark: #261c00;
+$background-color-dark: radial-gradient(70.24% 70.24% at 49.87% 29.76%, rgba(18, 12, 1, 0.9) 0%, #000000 100%);
 // font-color
 $font-color-primary-dark: #fcfbf7;
 $font-color-secondary-dark: #918f8a;
@@ -9,7 +9,10 @@ $bar-chat-secondary-background-color-dark: linear-gradient(180deg, rgba(0, 0, 0,
 $bar-chat-primary-box-shadow-dark: inset -1px 1px 1px rgba(255, 255, 255, 0.4), inset 0px 6px 15px rgba(255, 162, 0, 0.4);
 $bar-chat-secondary-box-shadow-dark: inset -1px 1px 1px rgba(255, 255, 255, 0.2), inset 2px 2px 16px rgba(103, 103, 103, 0.6);
 
+
+///////////////////////
 //----light mode----//
+/////////////////////
 $background-color-light: #fcfbf7;
 //font-color
 $font-color-primary-light: #261c00;

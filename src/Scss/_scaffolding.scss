@@ -4,7 +4,10 @@
 	--theme-font-primary-color: #{$font-color-primary-dark};
 	--theme-font-secondary-color: #{$font-color-secondary-dark};
 
-
+	--bar-chat-primary-background-color: #{$bar-chat-primary-background-color-dark};
+	--bar-chat-secondary-background-color: #{$bar-chat-secondary-background-color-dark};
+	--bar-chat-primary-box-shadow: #{$bar-chat-primary-box-shadow-dark};
+	--bar-chat-secondary-box-shadow: #{$bar-chat-secondary-box-shadow-dark};
 }
 
 .theme_light {
@@ -12,11 +15,30 @@
 
 	--theme-font-primary-color: #{$font-color-primary-light};
 	--theme-font-secondary-color: #{$font-color-secondary-light};
+
+	--bar-chat-primary-background-color: #{$bar-chat-primary-background-color-ligth};
+	--bar-chat-secondary-background-color: #{$bar-chat-secondary-background-color-light};
+	--bar-chat-primary-box-shadow: #{$bar-chat-primary-box-shadow-ligth};
+	--bar-chat-secondary-box-shadow: #{$bar-chat-secondary-box-shadow-light};
+}
+
+* {
+	box-sizing: border-box;
 }
 
 body {
-	background-color: var(--theme-background-color);
+	height: 100vh;
+	background: var(--theme-background-color);
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: center;
 	color: var(--theme-font-primary-color);
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
+	margin: 0;
+	padding: 0 ;
+}
+
+div#root {
+	height: 100%;
 }
