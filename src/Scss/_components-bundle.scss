@@ -6,12 +6,17 @@
 //default
 @import './Default/_text.scss';
 @import './Default/_avatar.scss';
+@import './Default/divider';
 
 //components
 @import '../Components/Leaders/_leaders.scss';
 @import '../Components/LeadersBarChart/_leaders-bar-chart.scss';
 @import '../Components/TemplateAlias/_template-alias.scss';
+@import '../Components/Chart/_chart.scss';
+@import '../Components/ChartBarCharts/chart-bar-charts';
+@import '../Components/ChartUsers/chart-users';
 
 // media
 @import '../Components/LeadersBarChart/_leaders-bar-chart-media.scss';
 @import '../Components/TemplateAlias/_template-alias-meda.scss';
+@import '../Components/Chart/chart-media';

@@ -1,0 +1,33 @@
+.chart{
+	&__bar-charts {
+		height: 90%;
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: flex-end;
+		padding-bottom: 10px;
+
+		&__content {
+			display: flex;
+			height: 90%;
+			justify-content: center;
+			left: 0;
+			transition: all 2s cubic-bezier(0.5, 0.8, 0.7, 0.6)
+		}
+	}
+
+	&__users {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 10%;
+		margin: 0 24px;
+		padding: 0 0 24px;
+		overflow: hidden;
+
+		& .divider:last-child {
+			display: none;
+		}
+	}
+}
