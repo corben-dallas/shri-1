@@ -27,7 +27,7 @@ const Leaders = ({ data }) => {
 	}, []);
 
 	return (
-		<div className="template-body">
+		<div className="template-body template-body__leaders">
 			{leadersRange && leadersRange.length &&
 				leadersRange.map(user => (
 					<LeadersBarChart key={user.id} {...user} emoji={data.emoji} />

@@ -1,0 +1,33 @@
+.chart__user {
+	&--content {
+		display: flex;
+		align-items: center;
+		justify-content: stretch;
+		max-width: 220px;
+		width: 220px;
+		order: 0;
+	}
+
+	&--avatar {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&--name {
+		margin-left: 14px;
+		width: 100%;
+		overflow: hidden;
+
+		& p, span {
+			margin: 2px 0;
+		}
+
+		& p {
+			overflow: hidden;
+			text-overflow: ellipsis;
+			width: 100%;
+			white-space: nowrap;
+		}
+	}
+}

@@ -8,6 +8,8 @@
 	--bar-chat-secondary-background-color: #{$bar-chat-secondary-background-color-dark};
 	--bar-chat-primary-box-shadow: #{$bar-chat-primary-box-shadow-dark};
 	--bar-chat-secondary-box-shadow: #{$bar-chat-secondary-box-shadow-dark};
+
+	--divider-background-color: #{$divider-background-color-dark};
 }
 
 .theme_light {
@@ -16,10 +18,12 @@
 	--theme-font-primary-color: #{$font-color-primary-light};
 	--theme-font-secondary-color: #{$font-color-secondary-light};
 
-	--bar-chat-primary-background-color: #{$bar-chat-primary-background-color-ligth};
+	--bar-chat-primary-background-color: #{$bar-chat-primary-background-color-light};
 	--bar-chat-secondary-background-color: #{$bar-chat-secondary-background-color-light};
-	--bar-chat-primary-box-shadow: #{$bar-chat-primary-box-shadow-ligth};
+	--bar-chat-primary-box-shadow: #{$bar-chat-primary-box-shadow-light};
 	--bar-chat-secondary-box-shadow: #{$bar-chat-secondary-box-shadow-light};
+
+	--divider-background-color: #{$divider-background-color-light};
 }
 
 * {

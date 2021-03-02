@@ -8,6 +8,7 @@
 		align-items: flex-end;
 		justify-content: center;
 		padding-bottom: 16px;
+		transition: all .2s ease;
 
 		&--user {
 			width: 100%;
@@ -29,6 +30,7 @@
 	&__bottom {
 		height: 60%;
 		position: relative;
+		transition: all 0.3s ease;
 
 		&--chart {
 			width: 100%;
@@ -51,6 +53,11 @@
 			left: 50%;
 			transform: translate(-50%, 0%);
 			z-index: 4;
+		}
+
+		&--title {
+			width: 100%;
+			margin: 12px 0;
 		}
 	}
 
