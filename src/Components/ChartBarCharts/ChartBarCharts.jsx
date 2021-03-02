@@ -34,10 +34,10 @@ const ChartBarCharts = ({
 	return (
 		<div ref={active ? activeElemRef : null} className={`bar-chart ${active ? 'bar-chart--first' : ''}`}>
 			<div ref={chartTopRef} className="bar-chart__top">
-				<p className={`text text--bigless ${active ? 'text--primary' : 'text--secondary'}`}>{value}</p>
+				<p className={`text text--bigless ${active ? 'text--primary' : 'text--secondary'}`}>{value || null}</p>
 			</div>
 			<div ref={chartBottomRef} className="bar-chart__bottom">
-				<div className="bar-chart__bottom--chart"></div>
+				<div className="bar-chart__bottom--chart" />
 			</div>
 			<div className="bar-chart__bottom--title">
 				<p className="text text--secondary text--center">{title}</p>
