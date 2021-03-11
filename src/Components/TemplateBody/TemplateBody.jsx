@@ -2,6 +2,7 @@ import React from 'react';
 
 import Chart from '../Chart/Chart';
 import Leaders from '../Leaders/Leaders';
+import Activity from '../Activity/Activity';
 
 import { templateAlias } from '../../Shared/constants';
 
@@ -13,6 +14,8 @@ const renderBody = (alias, data) => {
 			return <Leaders data={data} />;
 		case templateAlias.CHART:
 			return <Chart data={data} />;
+		case templateAlias.ACTIVITY:
+			return <Activity data={data} />;
 		default: 
 			return null;
 	}

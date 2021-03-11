@@ -3,8 +3,6 @@ import ChartBarCharts from '../ChartBarCharts/ChartBarCharts';
 import ChartUsers from '../ChartUsers/ChartUsers';
 
 const Chart = ({ data }) => {
-	console.log(data);
-
 	const [currentWidth, setCurrentWidth] = useState(0);
 	const [activeElemOffset, setActiveElemOffset] = useState(0);
 	const [range, setRange] = useState(null);

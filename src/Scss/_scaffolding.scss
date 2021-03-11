@@ -10,6 +10,19 @@
 	--bar-chat-secondary-box-shadow: #{$bar-chat-secondary-box-shadow-dark};
 
 	--divider-background-color: #{$divider-background-color-dark};
+
+	--activity-hour-vertical-background-color: #{$activity-hour-vertical-background-color-dark};
+	--activity-hour-vertical-shadow: #{$activity-hour-vertical-shadow-dark};
+	--activity-hour-horizontal-background-color: #{$activity-hour-horizontal-background-color-dark};
+	--activity-hour-horizontal-shadow: #{$activity-hour-horizontal-shadow-dark};
+	--activity-amount-min-background-color: #{$activity-amount-min-background-color-dark};
+	--activity-amount-min-shadow: #{$activity-amount-min-shadow-dark};
+	--activity-amount-mid-background-color: #{$activity-amount-mid-background-color-dark};
+	--activity-amount-mid-shadow: #{$activity-amount-mid-shadow-dark};
+	--activity-amount-max-background-color: #{$activity-amount-max-background-color-dark};
+	--activity-amount-max-shadow: #{$activity-amount-max-shadow-dark};
+	--activity-amount-extra-background-color: #{$activity-amount-extra-background-color-dark};
+	--activity-amount-extra-shadow: #{$activity-amount-extra-shadow-dark};
 }
 
 .theme_light {
@@ -24,6 +37,19 @@
 	--bar-chat-secondary-box-shadow: #{$bar-chat-secondary-box-shadow-light};
 
 	--divider-background-color: #{$divider-background-color-light};
+
+	--activity-hour-vertical-background-color: #{$activity-hour-vertical-background-color-light};
+	--activity-hour-vertical-shadow: #{$activity-hour-vertical-shadow-light};
+	--activity-hour-horizontal-background-color: #{$activity-hour-horizontal-background-color-light};
+	--activity-hour-horizontal-shadow: #{$activity-hour-horizontal-shadow-light};
+	--activity-amount-min-background-color: #{$activity-amount-min-background-color-light};
+	--activity-amount-min-shadow: #{$activity-amount-min-shadow-light};
+	--activity-amount-mid-background-color: #{$activity-amount-mid-background-color-light};
+	--activity-amount-mid-shadow: #{$activity-amount-mid-shadow-light};
+	--activity-amount-max-background-color: #{$activity-amount-max-background-color-light};
+	--activity-amount-max-shadow: #{$activity-amount-max-shadow-light};
+	--activity-amount-extra-background-color: #{$activity-amount-extra-background-color-light};
+	--activity-amount-extra-shadow: #{$activity-amount-extra-shadow-light};
 }
 
 * {

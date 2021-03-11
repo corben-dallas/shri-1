@@ -1,0 +1,19 @@
+.activity__polygon {
+	width: 34px;
+	height: 34px;
+	margin: -10px 0px;
+	position: relative;
+
+	& img {
+		position: absolute;
+		bottom: 0;
+		// opacity: .4;
+	}
+
+	& svg {
+		// height: 32px;
+		// width: 32px;
+		position: absolute;
+		bottom: 0;
+	}
+}
