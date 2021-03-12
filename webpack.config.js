@@ -55,10 +55,10 @@ module.exports = {
 		// 	patterns: [
 		// 		{
 		// 			from: path.resolve(__dirname, 'src/Assets'),
-		// 			to: path.resolve(__dirname, 'build/Assets'),
+		// 			to: path.resolve(__dirname, 'build/Assets')
 		// 		}
-		// 	]
-		// })
+		// 	],
+		// }),
 	],
 	devtool: isProd ? false : 'source-map',
 	module: {
@@ -67,10 +67,39 @@ module.exports = {
 				test: /\.html$/,
 				loader: 'html-loader',
 			},
+			// {
+			// 	test: /\.css$/i,
+			// 	use: [
+			// 		{
+			// 			loader: MiniCssExtractPlugin.loader,
+			// 			options: {
+			// 				hmr: isDev
+			// 			}
+			// 		},
+			// 		'css-loader'
+			// 	],
+			// },
+			// {
+			// 	test: /\.s[ac]ss$/,
+			// 	use: [
+			// 		{
+			// 			loader: MiniCssExtractPlugin.loader,
+			// 			options: {
+			// 				publicPath: (resoursePath, context) => {
+			// 					return path.relative(path.dirname(resoursePath), context) + '/';
+			// 				},
+			// 			}
+			// 		}, 
+			// 		'css-loader', 
+			// 		'sass-loader'
+			// 	],
+			// },
 			{
 				test: /\.(sa|sc|c)ss$/,
 				use: [
-					isProd ? MiniCssExtractPlugin.loader : 'style-loader',
+					// isProd ? MiniCssExtractPlugin.loader : 'style-loader',
+					// MiniCssExtractPlugin.loader,
+					'style-loader',
 					'css-loader',
 					'resolve-url-loader',
 					'sass-loader'
@@ -82,8 +111,8 @@ module.exports = {
 				use: ['babel-loader'],
 			},
 			{
-				test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
-				// type: 'asset/inline',
+				// test: /\.(woff(2)?|eot|ttf|otf)$/,
+				test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
 				use: [
 					{
 						loader: 'file-loader',
@@ -93,6 +122,18 @@ module.exports = {
 						},
 					}
 				]
+			},
+			{
+				test: /\.svg$/,
+				use: ['@svgr/webpack', 'url-loader'],
+			},
+			{
+				test: /\.(png|jpe?g|gif)$/i,
+				loader: 'file-loader',
+				options: {
+					name: '[name].[ext]',
+					outputPath: 'Assets/images'
+				},
 			},
 		]
 	},

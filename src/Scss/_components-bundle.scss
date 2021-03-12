@@ -15,8 +15,11 @@
 @import '../Components/Chart/_chart.scss';
 @import '../Components/ChartBarCharts/chart-bar-charts';
 @import '../Components/ChartUsers/chart-users';
+@import '../Components/ActivityPolygon/activity-polygon';
+@import '../Components/ActivitySortedDays/activity-sorted-days';
 
 // media
 @import '../Components/LeadersBarChart/_leaders-bar-chart-media.scss';
 @import '../Components/TemplateAlias/_template-alias-meda.scss';
 @import '../Components/Chart/chart-media';
+@import '../Components/ActivitySortedDays/activity-sorted-days-media';
