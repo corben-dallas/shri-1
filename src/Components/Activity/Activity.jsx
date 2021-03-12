@@ -5,7 +5,7 @@ import ActivitySortedDays from '../ActivitySortedDays/ActivitySortedDays';
 import { dayOfWeekSorter } from '../../Shared/constants';
 
 const Activity = ({ data }) => {
-	const [isLandscape, setIsLandscape] = useState(false);
+	const [isLandscape, setIsLandscape] = useState(null);
 	const [days, setDays] = useState([]);
 	const [sortedDays, setSortedDays] = useState([]);
 
@@ -20,8 +20,12 @@ const Activity = ({ data }) => {
 	useEffect(() => {
 		onOrientationChange();
 		window.addEventListener('resize', onOrientationChange);
+		document.querySelector('.template').classList.add('template__activity');
 
-		return () => window.removeEventListener('resize', onOrientationChange);
+		return () => {
+			window.removeEventListener('resize', onOrientationChange);
+			document.querySelector('.template').classList.remove('template__activity');
+		}
 	}, []);
 
 	useEffect(() => {
@@ -42,9 +46,15 @@ const Activity = ({ data }) => {
 					),
 			]);
 		} else {
-			setSortedDays([ 
-				...days.map(day => day.data
-						.map((item, index) => ({ id: index, value: item, day: day.day }))),
+			setSortedDays([
+				...days
+					.reduce((daysAcc, daysItem, daysIndex) => {
+						daysItem.data.forEach((dataItem, dataIndex) => {
+							daysAcc[dataIndex] = [...daysAcc[dataIndex] || [], {id:daysIndex, value: dataItem, day: daysItem.day }];
+						})
+
+						return daysAcc;
+				}, [])
 			]);
 		}
 	}, [isLandscape])
@@ -79,19 +89,19 @@ const Activity = ({ data }) => {
 					</div>
 					<div className="scale">
 						<div className="scale__amount scale__amount--min" />
-						<p className="text text--secondary">0</p>
+						<p className="text text--secondary">0 </p>
 					</div>
 					<div className="scale">
 						<div className="scale__amount scale__amount--mid" />
-						<p className="text text--secondary">1 - 2</p>
+						<p className="text text--secondary">1 - 2 </p>
 					</div>
 					<div className="scale">
 						<div className="scale__amount scale__amount--max" />
-						<p className="text text--secondary">3 - 4</p>
+						<p className="text text--secondary">3 - 4 </p>
 					</div>
 					<div className="scale">
 						<div className="scale__amount scale__amount--extra" />
-						<p className="text text--secondary">5 - 6</p>
+						<p className="text text--secondary">5 - 6 </p>
 					</div>
 				</div>
 			</div>

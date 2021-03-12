@@ -1,5 +1,6 @@
 .activity {
 	height: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -9,18 +10,19 @@
 		display: flex;
 
 		&:nth-child(2n) {
-			margin-left: 32px;
+			margin-left: 40px;
 		}
 	}
 
 	&__diagram {
-		// height: auto;
+		height: 80%;
+		margin-right: 20px;
 		// transform: scale(3);
 	}
 
 	&__scale {
+		height: 20%;
 		flex-direction: row;
-		// height: auto;
 
 		.scale {
 			display: flex;

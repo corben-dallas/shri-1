@@ -1,0 +1,36 @@
+@media screen and (max-width: 325px) {
+	.activity {
+		&__polygon {
+			width: 37px;
+			height: 37px;
+		}
+
+		.scale {
+			margin: 0 1px;
+		}
+	} 
+}
+
+@media screen and (orientation: landscape) and (max-width: 570px) {
+	.activity {
+		&__diagram {
+			height: 98%;
+		}
+
+		&__scale {
+			height: 2%;
+		}
+	}
+}
+
+@media screen and (orientation: landscape) and (max-width: 1025px) {
+	.template {
+		&__activity {
+			justify-content: center;
+		}
+
+		&-body__activity {
+			margin-bottom: auto;
+		}
+	}
+}
