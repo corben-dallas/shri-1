@@ -1,4 +1,5 @@
 import React from 'react';
+import { getAvatar } from '../../Shared/constants';
 
 const ChartUsers = ({
 	id,
@@ -10,7 +11,7 @@ const ChartUsers = ({
 		<React.Fragment>
 			<div className="chart__user--content">
 				<div className="chart__user--avatar">
-					<img className="user-avatar user-avatar--mini" src="http://placekitten.com/200/300" alt="avatar"/>
+					<img className="user-avatar user-avatar--mini" src={getAvatar(avatar)} alt="avatar"/>
 				</div>
 				<div className="chart__user--name">
 					<p className="text text--primary">{name}</p>
