@@ -17,9 +17,13 @@
 @import '../Components/ChartUsers/chart-users';
 @import '../Components/ActivityPolygon/activity-polygon';
 @import '../Components/ActivitySortedDays/activity-sorted-days';
+@import '../Components/Diagram/diagram';
+@import '../Components/DiagramDescription/diagram-description';
+@import '../Components/DiagramSegment/diagram-segmant';
 
 // media
 @import '../Components/LeadersBarChart/_leaders-bar-chart-media.scss';
 @import '../Components/TemplateAlias/_template-alias-meda.scss';
 @import '../Components/Chart/chart-media';
 @import '../Components/ActivitySortedDays/activity-sorted-days-media';
+@import '../Components/Diagram/diagram-media';

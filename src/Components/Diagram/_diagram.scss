@@ -1,0 +1,14 @@
+.template-body__diagram {
+	display: flex;
+	align-items: center;
+
+	.diagram {
+		width: 50%;
+		height: 100%;
+		padding: 0 24px;
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: center;
+	}
+}

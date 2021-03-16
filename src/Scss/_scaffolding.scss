@@ -23,6 +23,19 @@
 	--activity-amount-max-shadow: #{$activity-amount-max-shadow-dark};
 	--activity-amount-extra-background-color: #{$activity-amount-extra-background-color-dark};
 	--activity-amount-extra-shadow: #{$activity-amount-extra-shadow-dark};
+
+	--diagram-circle-extra-background-color: #{$diagram-circle-extra-background-color-dark};
+	--diagram-circle-extra-box-shadow: #{$diagram-circle-extra-box-shadow-dark};
+	--diagram-circle-max-background-color: #{$diagram-circle-max-background-color-dark};
+	--diagram-circle-max-box-shadow: #{$diagram-circle-max-box-shadow-dark};
+	--diagram-circle-mid-background-color: #{$diagram-circle-mid-background-color-dark};
+	--diagram-circle-mid-box-shadow: #{$diagram-circle-mid-box-shadow-dark};
+	--diagram-circle-min-background-color: #{$diagram-circle-min-background-color-dark};
+	--diagram-circle-min-box-shadow: #{$diagram-circle-min-box-shadow-dark};
+	--diagram-segment-extra-background-color: #{$diagram-segment-extra-background-color-dark};
+	--diagram-segment-max-background-color: #{$diagram-segment-max-background-color-dark};
+	--diagram-segment-mid-background-color: #{$diagram-segment-mid-background-color-dark};
+	--diagram-segment-min-background-color: #{$diagram-segment-min-background-color-dark};
 }
 
 .theme_light {
@@ -50,6 +63,19 @@
 	--activity-amount-max-shadow: #{$activity-amount-max-shadow-light};
 	--activity-amount-extra-background-color: #{$activity-amount-extra-background-color-light};
 	--activity-amount-extra-shadow: #{$activity-amount-extra-shadow-light};
+
+	--diagram-circle-extra-background-color: #{$diagram-circle-extra-background-color-light};
+	--diagram-circle-extra-box-shadow: #{$diagram-circle-extra-box-shadow-light};
+	--diagram-circle-max-background-color: #{$diagram-circle-max-background-color-light};
+	--diagram-circle-max-box-shadow: #{$diagram-circle-max-box-shadow-light};
+	--diagram-circle-mid-background-color: #{$diagram-circle-mid-background-color-light};
+	--diagram-circle-mid-box-shadow: #{$diagram-circle-mid-box-shadow-light};
+	--diagram-circle-min-background-color: #{$diagram-circle-min-background-color-light};
+	--diagram-circle-min-box-shadow: #{$diagram-circle-min-box-shadow-light};
+	--diagram-segment-extra-background-color: #{$diagram-segment-extra-background-color-light};
+	--diagram-segment-max-background-color: #{$diagram-segment-max-background-color-light};
+	--diagram-segment-mid-background-color: #{$diagram-segment-mid-background-color-light};
+	--diagram-segment-min-background-color: #{$diagram-segment-min-background-color-light};
 }
 
 * {

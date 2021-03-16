@@ -25,10 +25,12 @@
 
 	&--primary {
 		color: var(--theme-font-primary-color);
+		fill: var(--theme-font-primary-color);
 	}
 
 	&--secondary {
 		color: var(--theme-font-secondary-color);
+		fill: var(--theme-font-secondary-color);
 	}
 
 
