@@ -4,7 +4,6 @@ import ExtraDarkUrl from '../../Assets/images/1x/extra-dark.png';
 import MaxDarkUrl from '../../Assets/images/1x/max-dark.png';
 import MidDarkUrl from '../../Assets/images/1x/mid-dark.png';
 import MinDarkUrl from '../../Assets/images/1x/min-dark.png';
-
 import ExtraLightUrl from '../../Assets/images/1x/extra-light.png';
 import MaxLightUrl from '../../Assets/images/1x/max-light.png';
 import MidLightUrl from '../../Assets/images/1x/mid-light.png';

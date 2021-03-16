@@ -1,0 +1,65 @@
+.diagram__content {
+	width: 100%;
+	margin-right: 18px;
+
+	&__text {
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+		margin: 16px 0;
+
+		&--primary {
+			display: flex;
+
+			& .circle {
+				width: 16px;
+				height: 16px;
+				border-radius: 50%;
+				margin-right: 10px;
+
+				&--extra {
+					background: var(--diagram-circle-extra-background-color);
+					box-shadow: var(--diagram-circle-extra-box-shadow);
+				}
+
+				&--max {
+					background: var(--diagram-circle-max-background-color);
+					box-shadow: var(--diagram-circle-max-box-shadow);
+				}
+
+				&--mid {
+					background: var(--diagram-circle-mid-background-color);
+					box-shadow: var(--diagram-circle-mid-box-shadow);
+				}
+
+				&--min {
+					background: var(--diagram-circle-min-background-color);
+					box-shadow: var(--diagram-circle-min-box-shadow);
+				}
+			}
+		}
+
+		&--secondary {
+			display: flex;
+
+			&>span {
+				margin: 0 8px;
+
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+	&--divider {
+		width: 100%;
+		height: 2px;
+		margin: 0;
+
+		&:last-child {
+			display: none;
+		}
+	}
+}

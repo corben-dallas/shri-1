@@ -1,6 +1,6 @@
 <svg width="34" height="73" viewBox="0 0 34 73" fill="none" xmlns="http://www.w3.org/2000/svg">
 <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="34" height="72">
-<path d="M0 13.9767C0 12.7308 0.580524 11.5561 1.5702 10.7993L14.5702 0.858083C16.0044 -0.238676 17.9956 -0.238675 19.4298 0.858083L32.4298 10.7993C33.4195 11.5561 34 12.7308 34 13.9767V58.0233C34 59.2692 33.4195 60.4439 32.4298 61.2007L19.4298 71.1419C17.9956 72.2387 16.0044 72.2387 14.5702 71.1419L1.5702 61.2007C0.580524 60.4439 0 59.2692 0 58.0233V13.9767Z" fill="url(#paint0_radial)" fill-opacity="0.95"/>
+<path d="M0 13.9767C0 12.7308 0.580524 11.5561 1.5702 10.7993L14.5702 0.858083C16.0044 -0.238676 17.9956 -0.238675 19.4298 0.858083L32.4298 10.7993C33.4195 11.5561 34 12.7308 34 13.9767V58.0233C34 59.2692 33.4195 60.4439 32.4298 61.2007L19.4298 71.1419C17.9956 72.2387 16.0044 72.2387 14.5702 71.1419L1.5702 61.2007C0.580524 60.4439 0 59.2692 0 58.0233V13.9767Z" fill="url(#paint0_radial)" fillOpacity="0.95"/>
 </mask>
 <g mask="url(#mask0)">
 <g filter="url(#filter0_ii)">
@@ -10,11 +10,11 @@
 <path d="M34 59.0117V12.9883C34 12.3654 33.7097 11.778 33.2149 11.3996L17 -1V73L33.2149 60.6004C33.7097 60.222 34 59.6346 34 59.0117Z" fill="url(#paint2_radial)"/>
 </g>
 <g filter="url(#filter2_iif)">
-<path d="M17 -1L0 12L14.5702 23.1419C16.0044 24.2387 17.9956 24.2387 19.4298 23.1419L34 12L17 -1Z" fill="url(#paint3_radial)" fill-opacity="0.8"/>
+<path d="M17 -1L0 12L14.5702 23.1419C16.0044 24.2387 17.9956 24.2387 19.4298 23.1419L34 12L17 -1Z" fill="url(#paint3_radial)" fillOpacity="0.8"/>
 </g>
 </g>
 <defs>
-<filter id="filter0_ii" x="-1" y="-1" width="37" height="76" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_ii" x="-1" y="-1" width="37" height="76" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
